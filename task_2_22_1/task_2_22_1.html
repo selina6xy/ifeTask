@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>JavaScript和树（一）</title>
+	<style type="text/css">
+	    .root,.child_1,.child_2,.child_3 {
+	    	display: flex;
+            flex-direction: row;
+            border: 1px solid #000;
+            margin: 5px;
+            padding: 10px;
+            background-color: #FFFFFF;
+	    }
+        .root {
+            width: 900px;
+            height: 190px;
+        }
+        .child_1 {
+            width: 420px;
+            height: 160px;
+        }
+        .child_2 {
+            width: 180px;
+            height: 130px;
+        }
+        .child_3 {
+            width: 60px;
+            height: 100px;
+        }
+	</style>
+</head>
+<body>
+    <div class="root" id="tree_root">
+    	<div class="child_1">
+             <div class="child_2">
+                 <div class="child_3"></div>
+                 <div class="child_3"></div>
+             </div>
+             <div class="child_2">
+                 <div class="child_3"></div>
+                 <div class="child_3"></div>
+             </div>
+        </div>
+        <div class="child_1">
+             <div class="child_2">
+                 <div class="child_3"></div>
+                 <div class="child_3"></div>
+             </div>
+             <div class="child_2">
+                 <div class="child_3"></div>
+                 <div class="child_3"></div>
+             </div>
+        </div>
+    </div>
+    <input type="button" id="preOrder" value="前序遍历">
+    <input type="button" id="inOrder" value="中序遍历">
+    <input type="button" id="postOrder" value="后序遍历">
+    <script type="text/javascript" src="./js/task_2_22_1.js"></script>
+</body>
+</html>
